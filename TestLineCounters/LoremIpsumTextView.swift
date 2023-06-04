@@ -94,23 +94,15 @@ class LoremIpsumTextView: NSTextView {
         let stringIndexSelection = Range(selectionRange, in: string)!
         let startOfString = string[..<stringIndexSelection.upperBound]
         let scanner = Scanner(string: String(startOfString))
-        scanner.charactersToBeSkipped = []
-        var lineNumber = 1
+        scanner.charactersToBeSkipped = ["\n"]
         let characterSet:CharacterSet = ["\n"]
-        /*
-        while (nil != scanner.scanUpToCharacters(from: characterSet) && !scanner.isAtEnd) {
-            lineNumber += 1
-            scanner.currentIndex = scanner.string.index(after: scanner.currentIndex)
-        }
-        */
+
+        var lineNumber = 0
         repeat {
             lineNumber += 1
             _ = scanner.scanUpToCharacters(from: characterSet)
-            if scanner.isAtEnd {
-                break
-            }
-            scanner.currentIndex = string.index(after: scanner.currentIndex)
-        } while true
+            //scanner.currentIndex = string.index(after: scanner.currentIndex)
+        } while !scanner.isAtEnd
         let lineRange = string.lineRange(for: stringIndexSelection)
         let column = string.distance(from: lineRange.lowerBound, to: stringIndexSelection.upperBound)
         return (lineNumber, column, ProcessInfo.processInfo.systemUptime-start)
