@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "10D7DCC1-C0A4-40A8-8939-662AF599A63E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83FD75A4-C4A2-404C-83CD-26F0AF249F69"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCounters/LoremIpsumTextView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "init?(coder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "83FD75A4-C4A2-404C-83CD-26F0AF249F69 - 48a00ad244463437"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LoremIpsumTextView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TestLineCounters.LoremIpsumTextView&gt;"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCounters/TestLineCounters/LoremIpsumTextView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "83FD75A4-C4A2-404C-83CD-26F0AF249F69 - 48a00ad244463768"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LoremIpsumTextView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TestLineCounters.LoremIpsumTextView&gt;"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCounters/TestLineCounters/LoremIpsumTextView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52E3E4FD-E41B-47F9-B575-DA729A7A1C34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCounters/LoremIpsumTextView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "lineNumber2()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB995974-DEF6-4C06-86D5-BB2710B2F9F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCounters/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "tableView(_:toolTipFor:rect:tableColumn:row:mouseLocation:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EB995974-DEF6-4C06-86D5-BB2710B2F9F1 - 772520d505d86499"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.ViewController.tableView(_: __C.NSTableView, toolTipFor: __C.NSCell, rect: Swift.UnsafeMutablePointer&lt;__C.CGRect&gt;, tableColumn: Swift.Optional&lt;__C.NSTableColumn&gt;, row: Swift.Int, mouseLocation: __C.CGPoint) -&gt; Swift.String"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCounters/TestLineCounters/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "EB995974-DEF6-4C06-86D5-BB2710B2F9F1 - 772520d505d864db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.ViewController.tableView(_: __C.NSTableView, toolTipFor: __C.NSCell, rect: Swift.UnsafeMutablePointer&lt;__C.CGRect&gt;, tableColumn: Swift.Optional&lt;__C.NSTableColumn&gt;, row: Swift.Int, mouseLocation: __C.CGPoint) -&gt; Swift.String"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCounters/TestLineCounters/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "EB995974-DEF6-4C06-86D5-BB2710B2F9F1 - 772520d505d86144"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.ViewController.tableView(_: __C.NSTableView, toolTipFor: __C.NSCell, rect: Swift.UnsafeMutablePointer&lt;__C.CGRect&gt;, tableColumn: Swift.Optional&lt;__C.NSTableColumn&gt;, row: Swift.Int, mouseLocation: __C.CGPoint) -&gt; Swift.String"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCounters/TestLineCounters/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "EB995974-DEF6-4C06-86D5-BB2710B2F9F1 - 772520d505d87fb7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.ViewController.tableView(_: __C.NSTableView, toolTipFor: __C.NSCell, rect: Swift.UnsafeMutablePointer&lt;__C.CGRect&gt;, tableColumn: Swift.Optional&lt;__C.NSTableColumn&gt;, row: Swift.Int, mouseLocation: __C.CGPoint) -&gt; Swift.String"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCounters/TestLineCounters/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CBFE296-4C4A-4E1C-A5BA-A78FEDDA9F95"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCounters/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "populateTable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF618351-F570-4658-858B-AC1DBC9A1E37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/MyData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "155DBBBB-9412-4451-9B01-4985BFEE1130"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "calculateColumnLine()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F50CB1E-8BFE-49A6-93DA-53C22D2339AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "lineNumber0()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F50CB1E-8BFE-49A6-93DA-53C22D2339AC - 3083c90a02a116ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LoremIpsumTextView.lineNumber0() -&gt; (Swift.Int, Swift.Int, Swift.Double)"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCountersViewBased/TestLineCountersViewBased/LoremIpsumTextView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "0F50CB1E-8BFE-49A6-93DA-53C22D2339AC - 3083c90a02a116ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LoremIpsumTextView.lineNumber0() -&gt; (Swift.Int, Swift.Int, Swift.Double)"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCountersViewBased/TestLineCountersViewBased/LoremIpsumTextView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "644">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFB1FE1B-A013-479C-A444-6BB49AF65E7F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/LineChartsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EFB1FE1B-A013-479C-A444-6BB49AF65E7F - d6254d30da750930"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LineChartsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCountersViewBased/TestLineCountersViewBased/LineChartsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "EFB1FE1B-A013-479C-A444-6BB49AF65E7F - d6254d30da750930"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LineChartsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCountersViewBased/TestLineCountersViewBased/LineChartsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11221E0D-4442-4F7B-9CEC-BFDAEBBA3051"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "applicationDidFinishLaunching(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0F2D9C2-1026-428F-B276-2C0F0C1F2EA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "applicationWillTerminate(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3F64BEE-8D50-4455-89C5-3F133AF2E4E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "applicationShouldTerminateAfterLastWindowClosed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E75E6DDE-C108-4DEA-AD40-9783D7A4979A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "applicationSupportsSecureRestorableState(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CACAAF8C-E0B6-4337-8E95-25F9D543C885"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "tableView(_:willDisplayCell:for:row:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
