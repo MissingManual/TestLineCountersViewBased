@@ -12,13 +12,15 @@
 		2632B1CE2A2E4EE800646002 /* LoremIpsum.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2632B1CD2A2E4EE800646002 /* LoremIpsum.txt */; };
 		265B07282A2F45CF00E1D9D3 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265B07252A2F451B00E1D9D3 /* Charts.framework */; };
 		265B07292A2F45CF00E1D9D3 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 265B07252A2F451B00E1D9D3 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		26B4D4B92A2B5FE7004F422A /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 26B4D4B82A2B5FE7004F422A /* Algorithms */; };
 		26B4D4E82A2DE0F1004F422A /* LoremIpsumTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4D4E12A2DE0F1004F422A /* LoremIpsumTextView.swift */; };
 		26B4D4E92A2DE0F1004F422A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B4D4E22A2DE0F1004F422A /* Assets.xcassets */; };
 		26B4D4EA2A2DE0F1004F422A /* MyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4D4E42A2DE0F1004F422A /* MyLogger.swift */; };
 		26B4D4EB2A2DE0F1004F422A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4D4E52A2DE0F1004F422A /* AppDelegate.swift */; };
 		26B4D4EC2A2DE0F1004F422A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4D4E62A2DE0F1004F422A /* ViewController.swift */; };
 		26F9AA222A2F3AD000EF84D4 /* LineChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9AA212A2F3AD000EF84D4 /* LineChartsViewController.swift */; };
+		26FDD2B22A307CD000330539 /* ResultPreview.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26FDD2B02A307CD000330539 /* ResultPreview.jpg */; };
+		26FDD2B32A307CD000330539 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26FDD2B12A307CD000330539 /* README.md */; };
+		26FDD2B52A30819C00330539 /* Embedd Charts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26FDD2B42A30819C00330539 /* Embedd Charts.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		26B4D4E52A2DE0F1004F422A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TestLineCountersViewBased/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		26B4D4E62A2DE0F1004F422A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = TestLineCountersViewBased/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		26F9AA212A2F3AD000EF84D4 /* LineChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartsViewController.swift; sourceTree = "<group>"; };
+		26FDD2B02A307CD000330539 /* ResultPreview.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ResultPreview.jpg; sourceTree = SOURCE_ROOT; };
+		26FDD2B12A307CD000330539 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		26FDD2B42A30819C00330539 /* Embedd Charts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Embedd Charts.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B4D4B92A2B5FE7004F422A /* Algorithms in Frameworks */,
 				265B07282A2F45CF00E1D9D3 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +113,9 @@
 		26B4D4E02A2DE0A6004F422A /* TestLineCountersViewBased */ = {
 			isa = PBXGroup;
 			children = (
+				26FDD2B12A307CD000330539 /* README.md */,
+				26FDD2B02A307CD000330539 /* ResultPreview.jpg */,
+				26FDD2B42A30819C00330539 /* Embedd Charts.jpg */,
 				2632B1CD2A2E4EE800646002 /* LoremIpsum.txt */,
 				26B4D4E42A2DE0F1004F422A /* MyLogger.swift */,
 				2632B1CB2A2E2AD500646002 /* Benchmark.swift */,
@@ -149,7 +156,6 @@
 			);
 			name = TestLineCounters;
 			packageProductDependencies = (
-				26B4D4B82A2B5FE7004F422A /* Algorithms */,
 			);
 			productName = TestLineCounters;
 			productReference = 26B4D4A52A2B5D93004F422A /* TestLineCounters.app */;
@@ -181,7 +187,6 @@
 			);
 			mainGroup = 26B4D49C2A2B5D93004F422A;
 			packageReferences = (
-				26B4D4B72A2B5FE7004F422A /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 26B4D4A62A2B5D93004F422A /* Products */;
 			projectDirPath = "";
@@ -220,7 +225,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FDD2B52A30819C00330539 /* Embedd Charts.jpg in Resources */,
 				26B4D4E92A2DE0F1004F422A /* Assets.xcassets in Resources */,
+				26FDD2B22A307CD000330539 /* ResultPreview.jpg in Resources */,
+				26FDD2B32A307CD000330539 /* README.md in Resources */,
 				2632B1CE2A2E4EE800646002 /* LoremIpsum.txt in Resources */,
 				2632B1CA2A2E239900646002 /* Main.storyboard in Resources */,
 			);
@@ -455,25 +463,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		26B4D4B72A2B5FE7004F422A /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		26B4D4B82A2B5FE7004F422A /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 26B4D4B72A2B5FE7004F422A /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26B4D49D2A2B5D93004F422A /* Project object */;
 }
