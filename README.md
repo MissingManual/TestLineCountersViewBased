@@ -14,7 +14,8 @@ https://github.com/danielgindi/Charts
 Please move the Charts.xcodeproj directly under the Frameworks item in the navigation pane as shown in the picture (Embedd Charts.jpg).
 
 ## Side remark
-Benchmarking could have been done using Xcode Instruments, but this was an opportunity to learn how to use the charts framework,
-that in fact is very nicely written.
+1. Benchmarking could have been done using Xcode Instruments, but this was an opportunity to learn how to use the charts framework, that in fact is very nicely written. 
+
+2. The App runs on macOS 10.13.6 (High Sierra) up the latest Ventura. But I had hard times to get circumvent os.log Logger calls for versions less than macOS 11.  
 
 

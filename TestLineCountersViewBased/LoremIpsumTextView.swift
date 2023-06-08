@@ -4,8 +4,10 @@
 //
 //  Created by LegoEsprit on 03.06.23.
 //
-
+#if canImport(os.log)
 import os.log
+#endif
+
 import Cocoa
 
 extension Double {
@@ -65,7 +67,9 @@ class LoremIpsumTextView: NSTextView {
         ]
         for i in 1...5 {
             if (array[0].0 != array[i].0 || array[0].1 != array[i].1) {
-                Logger.write("Issue with method: \(i)")
+                if #available(macOS 11.0, *) {
+                    Logger.write("Issue with method: \(i)")
+                }
                 array[i].2 = -array[i].2
             }
         }
@@ -129,13 +133,15 @@ class LoremIpsumTextView: NSTextView {
         let characterSet:CharacterSet = ["\n"]
 
         var lineNumber = 0
-        while true {
-            lineNumber += 1
-            _ = scanner.scanUpToCharacters(from: characterSet)
-            if scanner.isAtEnd {
-                break
+        if #available(macOS 10.15, *) {
+            while true {
+                lineNumber += 1
+                _ = scanner.scanUpToCharacters(from: characterSet)
+                if scanner.isAtEnd {
+                    break
+                }
+                scanner.currentIndex = string.index(after: scanner.currentIndex)
             }
-            scanner.currentIndex = string.index(after: scanner.currentIndex)
         }
         //lineNumber = max(1, lineNumber)
         let lineRange = string.lineRange(for: stringIndexSelection)

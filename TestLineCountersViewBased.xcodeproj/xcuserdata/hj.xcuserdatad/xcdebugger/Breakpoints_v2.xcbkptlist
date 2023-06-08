@@ -188,8 +188,8 @@
             filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "calculateColumnLine()"
             landmarkType = "7">
          </BreakpointContent>
@@ -204,10 +204,10 @@
             filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "lineNumber0()"
-            landmarkType = "7">
+            landmarkType = "9">
             <Locations>
                <Location
                   uuid = "0F50CB1E-8BFE-49A6-93DA-53C22D2339AC - 3083c90a02a116ec"
@@ -252,8 +252,8 @@
             filePath = "TestLineCountersViewBased/LineChartsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -319,22 +319,6 @@
             startingLineNumber = "33"
             endingLineNumber = "33"
             landmarkName = "applicationWillTerminate(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F3F64BEE-8D50-4455-89C5-3F133AF2E4E8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestLineCountersViewBased/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "applicationShouldTerminateAfterLastWindowClosed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

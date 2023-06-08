@@ -2,10 +2,12 @@
 //  LineChartsViewController.swift
 //  TestLineCounters
 //
-//  Created by Heinz-Jörg on 06.06.23.
+//  Created by LegoEsprit on 06.06.23.
 //
 
+#if canImport(os.log)
 import os.log
+#endif
 import Foundation
 import Cocoa
 import Charts
@@ -76,11 +78,15 @@ class LineChartsViewController: NSViewController {
     
     @objc fileprivate func fireTimer() {
         
-        Logger.login("", className: className)
+        if #available(macOS 11.0, *) {
+            Logger.login("", className: className)
+        }
         appendData(x: x, ys: [Double.random(in: 0.0...1.2)])
         x += 1
 
-        Logger.logout("", className: className)
+        if #available(macOS 11.0, *) {
+            Logger.logout("", className: className)
+        }
     }
 
     

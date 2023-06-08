@@ -13,10 +13,14 @@ sudo log show --predicate 'subsystem == <Bundle Identifier>' --last 1h | awk 'NR
 sudo log stream --predicate 'subsystem == <Bundle Identifier>' | awk 'NR>2 {print substr($0,12,15) " T:" substr($0,index($0,"00 ")+3, 8)  substr($0, index($0,"]")+1) }'
 */
 
-import os.log
 import Foundation
 
 
+#if canImport(os.log)
+
+
+import os.log
+ 
 /// How to use
 ///
 ///         Logger.login("In-Message"[, className: className])                  // Increases indent
@@ -27,7 +31,12 @@ import Foundation
 ///  usage of [, className: className] is optional, but recommended to extract
 ///  the class.
 ///
+
+    
+
+@available(macOS 11.0, *)
 extension Logger {
+    
     private static let subsystem = Bundle.main.bundleIdentifier!
     static var fill: String = ""
     
@@ -43,7 +52,7 @@ extension Logger {
      OSLogPrivacy.public
      */
     
-    /// Generates a name from eith classname or file name
+    /// Generates a name from either classname or file name
     /// - Parameters:
     ///   - className: className or empty string
     ///   - file: filename of the sender
@@ -63,6 +72,7 @@ extension Logger {
     }
     
     
+        
     /// Writes message to log file keeping the level
     /// - Parameters:
     ///   - message: Message to be written to console
@@ -71,71 +81,76 @@ extension Logger {
     ///   - file: Optional filename used for the name if no filename is given - defaults to #file
     ///   - function: Optional method name - defaults to #function
     ///   - line: Optional line number - defaults to #line
+    @available(macOS 11.0, *)
     static func write(_ message: String
                       , level: OSLogType = defaultLevel
                       , className: String = ""
                       , file: String = #file
                       , function: StaticString = #function
                       //, line: UInt = #line
-                ) {
+    ) {
         
         let thread = Thread.isMainThread ? " " : "T"
         
         let name = name(className: className, file: file)
-        Logger.main.log(level: defaultLevel,
-                    //  v--- must be all same column!
-                        """
-                        \(fill, privacy: .public)\
-                        \(thread)\(name, privacy: .public)\
-                        \(function, privacy: .public),\
-                         \(message, privacy: .public)
-                        """)
-                    //  ^--- must be all same column!
-    }
+        
+            Logger.main.log(level: defaultLevel,
+                            //  v--- must be all same column!
+                 """
+                 \(fill, privacy: .public)\
+                 \(thread)\(name, privacy: .public)\
+                 \(function, privacy: .public),\
+                  \(message, privacy: .public)
+                 """)
+            //  ^--- must be all same column!
     
+    }
+        
     /// Increases the log level indent
     /// - Parameters:
     ///   see write
+    @available(macOS 11.0, *)
     static func login(_ message: String
                       , level: OSLogType = defaultLevel
                       , className: String = ""
                       , file: String = #file
                       , function: StaticString = #function
                       //, line: UInt = #line
-                ) {
+    ) {
         let name = name(className: className, file: file)
         if Thread.isMainThread {
             // \(String(format: "%4d", line), privacy: .public)\
             Logger.main.log(level: defaultLevel,
-                        """
-                        \(fill, privacy: .public)\
-                        ╭╴ \(name, privacy: .public)\
-                        \(function, privacy: .public),\
-                         \(message, privacy: .public)
-                        """)
+                 """
+                 \(fill, privacy: .public)\
+                 ╭╴ \(name, privacy: .public)\
+                 \(function, privacy: .public),\
+                  \(message, privacy: .public)
+                 """)
             fill += "│ "
         }
         else {
             Logger.main.log(level: defaultLevel,
-                        """
-                        \(fill, privacy: .public)\
-                        T\(name, privacy: .public)\
-                        \(function, privacy: .public),\
-                         \(message, privacy: .public)
-                        """)
+                 """
+                 \(fill, privacy: .public)\
+                 T\(name, privacy: .public)\
+                 \(function, privacy: .public),\
+                  \(message, privacy: .public)
+                 """)
         }
     }
-    
+        
     /// Decreases the log level indent
     /// - Parameters:
     ///   see write
+    @available(macOS 11.0, *)
     static func logout(_ message: String
                        , level: OSLogType = defaultLevel
                        , className: String = ""
                        , file: String = #file
                        , function: StaticString = #function
                        //, line: UInt = #line
-                ) {
+    ) {
         if fill.count >= 2 {
             fill.removeLast(2)
         }
@@ -143,22 +158,80 @@ extension Logger {
         if Thread.isMainThread {
             
             Logger.main.log(level: defaultLevel,
-                        """
-                        \(fill, privacy: .public)\
-                        ╰╴ \(name, privacy: .public)\
-                        \(function, privacy: .public),\
-                         \(message, privacy: .public)
-                        """)
+                 """
+                 \(fill, privacy: .public)\
+                 ╰╴ \(name, privacy: .public)\
+                 \(function, privacy: .public),\
+                  \(message, privacy: .public)
+                 """)
         }
         else {
             Logger.main.log(level: defaultLevel,
-                        """
-                        \(fill, privacy: .public)\
-                        T\(name, privacy: .public)\
-                        \(function, privacy: .public),\
-                         \(message, privacy: .public)
-                        """)
+                 """
+                 \(fill, privacy: .public)\
+                 T\(name, privacy: .public)\
+                 \(function, privacy: .public),\
+                  \(message, privacy: .public)
+                 """)
         }
     }
+}
+
+#else
+
+public struct OSLogType { //: Equatable, RawRepresentable {
+    public init(_ rawValue: UInt8) {}
+    public init(rawValue: UInt8) {}
+}
+
+extension OSLogType {
+    public static let `default` = OSLogType(0)
+}
+
+
+
+public struct Logger {
+    static let defaultLevel = OSLogType.default
+
+    init(subsystem: String, category: String) {
+        
+    }
+    func log(level: Any, _ msg: String) {
+        
+    }
+    static func write(_ message: String
+                      , level: OSLogType = defaultLevel
+                      , className: String = ""
+                      , file: String = #file
+                      , function: StaticString = #function
+                      //, line: UInt = #line
+    ) {
+    }
+    
+    static func login(_ message: String
+                      , level: OSLogType = defaultLevel
+                      , className: String = ""
+                      , file: String = #file
+                      , function: StaticString = #function
+                      //, line: UInt = #line
+    ) {
+    }
+    
+    static func logout(_ message: String
+                      , level: OSLogType = defaultLevel
+                      , className: String = ""
+                      , file: String = #file
+                      , function: StaticString = #function
+                      //, line: UInt = #line
+    ) {
+    }
+
+
+
     
 }
+
+#endif
+
+
+
