@@ -8,7 +8,7 @@ The surprising result is that using the regular expression is by far the fastest
 Tested with Xcode 14 under Ventura (ResultPreview.jpg)
 
 ## Requirements
-The project make use of Charts.xcodeproj to be downloaded from 
+The project makes use of Charts.xcodeproj to be downloaded from 
 https://github.com/danielgindi/Charts
 
 Please move the Charts.xcodeproj directly under the Frameworks item in the navigation pane as shown in the picture (Embedd Charts.jpg).

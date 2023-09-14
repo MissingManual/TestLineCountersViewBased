@@ -51,7 +51,8 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                       , components: array[3].2
                       , enumerate:  array[4].2
                       , reduce:     array[5].2
-                     ))
+            )
+        )
         lineChartController.appendData(x: Double(array[0].0), ys:[array[0].2
                                                                   , array[1].2
                                                                   , array[2].2
