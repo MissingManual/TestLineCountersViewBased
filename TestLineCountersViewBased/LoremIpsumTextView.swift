@@ -4,6 +4,11 @@
 //
 //  Created by LegoEsprit on 03.06.23.
 //
+//	Uses:
+//	- ProcessInfo.processInfo.systemUptime
+//	Might be replaced by
+//	- DispatchTime.now().uptimeNanoseconds
+//
 #if canImport(os.log)
 import os.log
 #endif

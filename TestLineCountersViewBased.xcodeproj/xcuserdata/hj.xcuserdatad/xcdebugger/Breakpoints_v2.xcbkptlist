@@ -188,8 +188,8 @@
             filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "calculateColumnLine()"
             landmarkType = "7">
          </BreakpointContent>
@@ -204,8 +204,8 @@
             filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "lineNumber0()"
             landmarkType = "7">
             <Locations>
