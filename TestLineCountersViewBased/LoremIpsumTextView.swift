@@ -8,6 +8,8 @@
 //	- ProcessInfo.processInfo.systemUptime
 //	Might be replaced by
 //	- DispatchTime.now().uptimeNanoseconds
+//  or
+//  -  CFAbsoluteTimeGetCurrent()
 //
 #if canImport(os.log)
 import os.log
@@ -97,9 +99,15 @@ class LoremIpsumTextView: NSTextView {
         super.keyDown(with: event)
         calculateColumnLine()
     }
+	
+	static let name0 = "LineRange"
 
     func lineNumber0() -> (Int, Int, Double) {
-        let start = ProcessInfo.processInfo.systemUptime;
+        let start = ProcessInfo.processInfo.systemUptime
+		let startDispatch = DispatchTime.now().uptimeNanoseconds
+		let startCF = CFAbsoluteTimeGetCurrent()
+
+		
         var lineNumber = 0
 
         let selectionRange: NSRange = selectedRange()
@@ -113,9 +121,16 @@ class LoremIpsumTextView: NSTextView {
             lineNumber += 1
         }
         let column = string.distance(from: lineRange.lowerBound, to: stringIndexSelection.upperBound)
-        return (lineNumber, column, ProcessInfo.processInfo.systemUptime-start)
+		let end = ProcessInfo.processInfo.systemUptime-start
+		let endDispatch = DispatchTime.now().uptimeNanoseconds-startDispatch
+		let endDispatchDouble = Double(endDispatch) * 1.0E-9
+		let endCF = CFAbsoluteTimeGetCurrent()-startCF
+		let endCFDouble = endCF as Double
+        return (lineNumber, column, end)
     }
-    
+
+	static let name1 = "RegularExpression"
+
     func lineNumber1() -> (Int, Int, Double) {
         let start = ProcessInfo.processInfo.systemUptime;
         let selectionRange: NSRange = selectedRange()
@@ -127,9 +142,11 @@ class LoremIpsumTextView: NSTextView {
    
         return (lineNumber, column, ProcessInfo.processInfo.systemUptime-start)
     }
-    
+
+	static let name2 = "Scanner"
+
     func lineNumber2() -> (Int, Int, Double) {
-        let start = ProcessInfo.processInfo.systemUptime;
+        let start = ProcessInfo.processInfo.systemUptime
         let selectionRange: NSRange = selectedRange()
         let stringIndexSelection = Range(selectionRange, in: string)!
         let startOfString = string[..<stringIndexSelection.upperBound]
@@ -153,9 +170,11 @@ class LoremIpsumTextView: NSTextView {
         let column = string.distance(from: lineRange.lowerBound, to: stringIndexSelection.upperBound)
         return (lineNumber, column, ProcessInfo.processInfo.systemUptime-start)
     }
+	
+	static let name3 = "Components"
     
     func lineNumber3() -> (Int, Int, Double) {
-        let start = ProcessInfo.processInfo.systemUptime;
+        let start = ProcessInfo.processInfo.systemUptime
         let stringIndexSelection = Range(selectedRange(), in: string)!
         let startOfString = string[..<stringIndexSelection.upperBound]
         let lineNumber = startOfString.components(separatedBy: "\n").count
@@ -163,9 +182,11 @@ class LoremIpsumTextView: NSTextView {
         let column = string.distance(from: lineRange.lowerBound, to: stringIndexSelection.upperBound)
         return (lineNumber, column, ProcessInfo.processInfo.systemUptime-start)
     }
+	
+	static let name4 = "EnumerateLines"
     
     func lineNumber4() -> (Int, Int, Double) {
-        let start = ProcessInfo.processInfo.systemUptime;
+        let start = ProcessInfo.processInfo.systemUptime
 
         let stringIndexSelection = Range(selectedRange(), in: string)!
         let startOfString = string[..<stringIndexSelection.upperBound]
@@ -182,9 +203,14 @@ class LoremIpsumTextView: NSTextView {
         return (lineNumber, column, ProcessInfo.processInfo.systemUptime-start)
 
     }
+	
+	static let name5 = "Reduce"
     
     func lineNumber5() -> (Int, Int, Double) {
-        let start = ProcessInfo.processInfo.systemUptime;
+        let start = ProcessInfo.processInfo.systemUptime
+		let startDispatch = DispatchTime.now().uptimeNanoseconds
+		let startCF = CFAbsoluteTimeGetCurrent()
+
 
         let stringIndexSelection = Range(selectedRange(), in: string)!
         let startOfString = string[string.startIndex..<stringIndexSelection.upperBound]
@@ -196,7 +222,13 @@ class LoremIpsumTextView: NSTextView {
 
         let lineRange = string.lineRange(for: stringIndexSelection)
         let column = string.distance(from: lineRange.lowerBound, to: stringIndexSelection.upperBound)
-        return (lineNumber, column, ProcessInfo.processInfo.systemUptime-start)
+		let end = ProcessInfo.processInfo.systemUptime
+		let endDispatch = DispatchTime.now().uptimeNanoseconds
+		let endCF = CFAbsoluteTimeGetCurrent()
+		let result = end - start
+		let resultDispatch = Double(endDispatch - startDispatch) * 1.0E-9
+		let resultCF = (endCF-startCF) as Double
+        return (lineNumber, column, result)
 
     }
     

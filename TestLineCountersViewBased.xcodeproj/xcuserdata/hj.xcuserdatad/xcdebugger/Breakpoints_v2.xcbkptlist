@@ -188,8 +188,8 @@
             filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "calculateColumnLine()"
             landmarkType = "7">
          </BreakpointContent>
@@ -204,8 +204,8 @@
             filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "lineNumber0()"
             landmarkType = "7">
             <Locations>
@@ -368,6 +368,102 @@
             endingLineNumber = "87"
             landmarkName = "tableView(_:willDisplayCell:for:row:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "387BACA3-B7CF-421B-A46F-A146AAF0A141"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "lineNumber0()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "387BACA3-B7CF-421B-A46F-A146AAF0A141 - 3083c90a02a11b32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LoremIpsumTextView.lineNumber0() -&gt; (Swift.Int, Swift.Int, Swift.Double)"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCountersViewBased/TestLineCountersViewBased/LoremIpsumTextView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "2240">
+               </Location>
+               <Location
+                  uuid = "387BACA3-B7CF-421B-A46F-A146AAF0A141 - 3083c90a02a11b70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LoremIpsumTextView.lineNumber0() -&gt; (Swift.Int, Swift.Int, Swift.Double)"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCountersViewBased/TestLineCountersViewBased/LoremIpsumTextView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "2332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E6AEACC-D5AA-4A98-82A9-8D1851A99C7C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestLineCountersViewBased/LoremIpsumTextView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "lineNumber5()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0E6AEACC-D5AA-4A98-82A9-8D1851A99C7C - d1fea89e6fc8bfe7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LoremIpsumTextView.lineNumber5() -&gt; (Swift.Int, Swift.Int, Swift.Double)"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCountersViewBased/TestLineCountersViewBased/LoremIpsumTextView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
+                  offsetFromSymbolStart = "1912">
+               </Location>
+               <Location
+                  uuid = "0E6AEACC-D5AA-4A98-82A9-8D1851A99C7C - d1fea89e6fc8bfe7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestLineCounters.LoremIpsumTextView.lineNumber5() -&gt; (Swift.Int, Swift.Int, Swift.Double)"
+                  moduleName = "TestLineCounters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hj/Documents/Development/mySoftware/myXCode/Swift/MacOS_Swift/TestLineCountersViewBased/TestLineCountersViewBased/LoremIpsumTextView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
+                  offsetFromSymbolStart = "1940">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

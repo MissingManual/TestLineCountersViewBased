@@ -47,9 +47,22 @@ class Benchmark: NSObject {
     }
     
     static func header(section: Int) -> String {
+		let result = [
+			LoremIpsumTextView.name0
+		, LoremIpsumTextView.name1
+		, LoremIpsumTextView.name2
+		, LoremIpsumTextView.name3
+		, LoremIpsumTextView.name4
+		, LoremIpsumTextView.name5
+		] [section]
+		
+		
+		return result
+
+		/*
         switch section {
         case 0:
-            return "LineRange"
+			return "LineRange"
         case 1:
             return "Regular Expression"
         case 2:
@@ -63,6 +76,7 @@ class Benchmark: NSObject {
         default:
             return "Undefined"
         }
+		 */
     }
 
     static func color(section: Int) -> NSColor {
